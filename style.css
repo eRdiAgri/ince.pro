@@ -250,6 +250,10 @@ h1 {
     justify-content: center;
 }
 
+.top-tools-wrapper .tools img {
+    width: 64px;
+}
+
 .top-tools-wrapper p {
     flex: 1 0 0;
 }
