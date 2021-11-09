@@ -23,12 +23,16 @@ body {
 }
 
 .container {
-    max-height: 100vh;
     overflow-y: scroll;
     scroll-snap-type: mandatory;
     scroll-snap-points-y: repeat(3rem);
     scroll-snap-type: y mandatory;
     -webkit-overflow-scrolling: touch;
+    position: absolute;
+    height: 100%;
+    height: -webkit-fill-available;
+    height: fill-available;
+    width: 100%;
 }
 
 .container::-webkit-scrollbar {
