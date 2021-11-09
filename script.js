@@ -33,13 +33,21 @@ const rootMargin = Math.floor(window.innerHeight / 4) * -1;
             if (entry.boundingClientRect.top <= window.innerHeight + rootMargin && entry.isIntersecting) {
                 [...dots.children].forEach(item => item.classList.remove("active"));
                 dots.children[index].classList.add("active");
+                console.log("kosul 1");
             }
             else if (entry.boundingClientRect.top >= window.innerHeight + rootMargin) {
                 [...dots.children].forEach(item => item.classList.remove("active"));
                 dots.children[index - 1].classList.add("active");
+                console.log("kosul 2");
             }
             else {
                 dots.children[index].classList.remove("active");
+                //[...dots.children].forEach(item => item.className.includes("active"));
+                //index > 0 && dots.children[index - 1].classList.add("active");
+                index > 0 && console.log(![...dots.children].map(item => item.className.includes("active")).includes(true));
+                if (index > 0 && ![...dots.children].map(item => item.className.includes("active")).includes(true))
+                    dots.children[index - 1].classList.add("active");
+                console.log("kosul 4");
             }
         });
 
