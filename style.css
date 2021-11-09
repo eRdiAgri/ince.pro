@@ -61,11 +61,13 @@ h1 {
     margin: 0 auto;
     display: flex;
     width: 600px;
-    box-shadow: 0 0 0 12px #ff4436,
-                0 0 0 24px #d32f2f,
-                0 0 0 36px #9c27b0,
-                0 0 0 48px #3f51b5,
-                0 0 0 60px #1a237e;
+    box-shadow: 0 0 0 15px #E53935,
+                0 0 0 30px #d32f2f,
+                0 0 0 45px #9c27b0,
+                0 0 0 60px #3f51b5,
+                0 0 0 75px #1a237e;
+   
+    
     border-radius: 10% / 35% 80%;
     align-items: flex-start;
     gap: 20px;
@@ -73,10 +75,10 @@ h1 {
 }
 
 .resume img {
-    width: 200px;
+    width: 230px;
     border-radius: 50%;
-    margin-top: -40px;
-    margin-left: -40px;
+    margin-top: -80px;
+    margin-left: -70px;
 }
 
 .resume > div {
@@ -92,14 +94,14 @@ h1 {
 
 .main-wrapper .links {
     width: min(90%, 600px);
-    margin: 70px auto 0;
+    margin: 90px auto 0;
     display: flex;
-    gap: 10px;
+    gap: 20px;
 }
 
 .main-wrapper .links img, .main-wrapper .links svg  {
-    width: 32px;
-    height: 32px;
+    width: 40px;
+    height: 40px;
 }
 
 .contact-wrapper {
@@ -121,7 +123,7 @@ h1 {
     top: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.3;
+    opacity: 0.2;
     background-image: url(./phone.svg);
     background-repeat: no-repeat;
     background-position: 30% 0;
@@ -239,10 +241,10 @@ h1 {
     top: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.3;
+    opacity: 0.15;
     background-image: url(./hammer.svg);
     background-repeat: no-repeat;
-    background-position: 20% 50%;
+    background-position: 50% 50%;
     background-size: 70% 70%;
 }
 
@@ -265,6 +267,8 @@ h1 {
 
 .top-tools-wrapper p {
     flex: 1 0 0;
+    line-height: 2;
+    font-size: 1rem;
 }
 
 @media screen and (max-width: 668px) {
@@ -282,7 +286,36 @@ h1 {
         align-items: center;
         width: 80%;
         gap: 5px;
+        box-shadow: 0 0 0 12px #E53935,
+                    0 0 0 24px #d32f2f,
+                    0 0 0 36px #9c27b0,
+                    0 0 0 48px #3f51b5,
+                    0 0 0 60px #1a237e;
     }
+
+    /*.resume::before {
+        content: 'Enesince';
+        position: absolute;
+        width: 100px;
+        height: 200px;
+        background-color: #191919;
+        right: 100%;
+    }
+
+    .resume::after {
+        content: 'Enesince';
+        position: absolute;
+        width: 100px;
+        height: 200px;
+        background-color: #191919;
+        left: 90%;
+    }*/
+
+    .resume p {
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
     .resume img {
         width: 100px;
         margin-top: -85px;
@@ -326,5 +359,15 @@ h1 {
     h1 {
         text-align: center;
         margin-bottom: 100px;
+    }
+
+    .main-wrapper .links img, .main-wrapper .links svg {
+        width: 32px;
+        height: 32px;
+    }
+    .main-wrapper .links {
+        margin-top: 70px;
+        gap: 10px;
+        justify-content: flex-end;
     }
 }
